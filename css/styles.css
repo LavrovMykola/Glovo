@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    background-image: url('/img/stepan.jpg');
+    background-color: #FFAA00;
     display: grid;
     grid-template-areas:
     'header header header header header header'
@@ -12,77 +12,88 @@
     'left-menu left-menu main-area main-area main-area right-area'
     'footer footer footer footer footer footer';
     grid-gap: 15px;
-    font-size: 16px;
+    font-size: 24px;
     color: black;
     font-family: sans-serif;
     font-weight: 600;
     text-align: center;    
     justify-content: space-between;
     margin: 0 auto;
+    text-shadow: 2px 1px 1px grey;
 }
 .container div {
     padding: 30px 0;
     opacity: 98%;
-    border: 2px dashed red;
+    border: 2px solid black;
 }
 .header {
     grid-area: header;
     background-color: rgb(67, 217, 255);
-    background: linear-gradient(to bottom, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/grob.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/glovo_logo.png');
+    background-size: contain;
     height: 450px;
     padding: 70px;
     font-size: 74px;
-    color: blue;
-    text-shadow: 4px 3px 1px yellow;
+    color: lightskyblue;
+    text-shadow: 4px 3px 1px white;
     font-weight: 900;
 }
 .sub-left {
     grid-area: sub-left;
     background-color: yellow;
-    background: linear-gradient(to right, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/room.jpg');
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(to right,rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/glovo_food.png');
+    color: black;
     background-position: center;
+    background-size: contain;
 }
 .sub-right {
     grid-area: sub-right;
     background-color: yellow;
-    background: linear-gradient(to right, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/four.jpg');
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(to right,rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/glovo.jpg');
+    color: black;
     background-size: contain;
 }
 .left-menu {
     grid-area: left-menu;
     background-color: #DD5555;
-    background: linear-gradient(to right, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/rose.jpeg');
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    background-size: cover;
+    background: linear-gradient(to right,rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/glovo_bike.jpg');
+    color: black;
+    background-size: contain;
 }
 .main-area {
     grid-area: main-area;
     background-color: #880088;
     width: 500px;
-    background: linear-gradient(to right, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/gerl.jpg');
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(to right,rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/glovo_4el.jpeg');
+    color: black;
     background-size: contain;
 }
 .right-area {
     grid-area: right-area;
     background-color: #44AA33;
-    background: linear-gradient(to right, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/suit.png');
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(to right,rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/bike.jpg');
+    color: black;
+    background-size: contain;
 }
 .footer {
     grid-area: footer;
     background-color: #FFAA00;
-    color: red;
+    color: yellow;
     text-shadow: 2px 1px 1px black;
-    background: linear-gradient(to right, rgba(4, 0, 255, 0.5), rgba(238, 255, 0, 0.5)), url('../img/lunch.jpg');
+    background: linear-gradient(to right,rgba(255, 0, 200, 0.5),
+    rgba(21, 255, 0, 0.5)), url('../img/glovo_logo.png');
     background-size: contain;
+}
+.ala{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 900;
+    text-shadow: 3px 1px 1px red;
 }
